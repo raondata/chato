@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 267" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+        <g transform="matrix(0.621041,0,0,0.621041,-1.11021,32.9467)">
+            <text x="39.82px" y="151.497px" style="font-family:'NotoSansKR-Black', 'Noto Sans KR Black', sans-serif;font-weight:900;font-size:112.276px;fill:white;">VH S<tspan x="292.665px " y="151.497px ">t</tspan>udio</text>
+        </g>
+        <path d="M554.031,86.619C554.031,75.242 544.795,66.006 533.419,66.006L401.637,66.006C390.26,66.006 381.024,75.242 381.024,86.619L381.024,110.018C381.024,121.394 390.26,130.63 401.637,130.63L533.419,130.63C544.795,130.63 554.031,121.394 554.031,110.018L554.031,86.619Z" style="fill:url(#_Linear1);"/>
+        <g transform="matrix(0.95456,0,0,0.893095,21.6824,10.224)">
+            <path d="M554.031,86.619C554.031,75.242 545.39,66.006 534.746,66.006L400.309,66.006C389.666,66.006 381.024,75.242 381.024,86.619L381.024,110.018C381.024,121.394 389.666,130.63 400.309,130.63L534.746,130.63C545.39,130.63 554.031,121.394 554.031,110.018L554.031,86.619Z" style="fill-opacity:0.78;"/>
+        </g>
+        <g transform="matrix(0.536807,0,0,0.536807,174.962,41.3025)">
+            <text x="405.893px" y="128.566px" style="font-family:'NotoSansKR-Light', 'Noto Sans KR Light', sans-serif;font-weight:300;font-size:62.94px;fill:white;">C<tspan x="443.657px " y="128.566px ">O</tspan>MP<tspan x="573.942px 610.195px 648.274px " y="128.566px 128.566px 128.566px ">ACT</tspan></text>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(158.146,52.5211,-52.5211,158.146,389.672,72.9093)"><stop offset="0" style="stop-color:rgb(215,98,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(122,255,255);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

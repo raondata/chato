@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description1 %}{% endblock %}">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chato">
+    <meta property="og:description" content="{% block description2 %}{% endblock %}">
+    <meta property="og:image" content="./static/favicon/apple-icon-120x120.png">
+    <meta property="og:url" content="https://chato.raondata.ai">
+
+    <meta property="instagram:card" content="Your closest AI friend in the desktop">
+    <meta property="instagram:title" content="Chato">
+    <meta property="instagram:description" content="{% block description3 %}{% endblock %}">
+    <meta property="instagram:image" content="./static/favicon/apple-icon-120x120.png">
+    <meta property="instagram:domain" content="Chato">
+    
+    <meta property="youtube:card" content="Your closest AI friend in the desktop">
+    <meta property="youtube:title" content="Chato">
+    <meta property="youtube:description" content="{% block description4 %}{% endblock %}">
+    <meta property="youtube:image" content="./static/favicon/apple-icon-120x120.png">
+    <meta property="youtube:domain" content="Chato">
+    
+    <!-- <link rel="icon" src="static/img/logo.svg"> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./static/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./static/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./static/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./static/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./static/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./static/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./static/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./static/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./static/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./static/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./static/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./static/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="google-site-verification" content="O7aNPV84PmrrEKAPMxnto77wuBWawA8Ntus1ixIr-nE" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+  
+        html {
+          font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+      </style>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <meta name="naver-site-verification" content="2ef994cc8bb5cb4e57d7f85f9d192180f8ba2493" />
+
+    <!-- Hotjar Tracking Code for https://www.chato.raondata.ai -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3659699,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+
+
+<body id="page" class="antialiased font-body bg-body text-body scroll-smooth md:scroll-auto" x-data="{ open: false }"  style="background-color: rgb(54, 56, 64);">
+    <div class="" id="content">
+        <section class="overflow-hidden pb-20">
+            <section>
+                <div>
+                    <div class="flex items-center justify-between pt-8 px-8 lg:px-24 xl:px-36 py-5 relative">
+                        <div class="w-auto">
+                            <div class="items-center">
+                                <div class="mr-14">
+                                    <a class="uppercase font-extrabold text-white flex items-center" href="#">
+                                        <img src="static/img/logo.svg" class="w-8 lg:w-12"><p class="px-3 text-2xl lg:text-3xl">Chato</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-auto">
+                            <div class="items-center">
+                                <div class="w-auto flex">
+                                    <a href="https://blog.naver.com/chato-raondata" target="_blank" ><img src="static/img/naver.svg"  alt= "naver logo"width="60"></a>
+                                    <a href="https://www.instagram.com/chato.raondata/" target="_blank" ><img src="static/img/instagram.svg" alt= "instagram logo" width="60"></a>
+                                    <a href="https://www.youtube.com/@chato.raondata" target="_blank" ><img src="static/img/youtube.svg" alt= "youtube logo" width="60"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        
+<div class="relative container max-w-3xl mx-auto px-6 py-12 sm:px-6 lg:py-16 lg:px-8">
+    <!-- <embed src="static/law.pdf')}}"ss="mx-auto w-full h-screen" frameborder="0"></iframe> -->
+        <div class="text-white">
+        <div class="pb-10">
+            <h1 class="text-2xl font-extrabold">개인정보처리방침</h1>
+            <p class="py-4">주식회사 라온데이터 (이하 "회사")는 개인정보를 소중하게 생각하고 개인정보를 보호하기 위하여 최선을 다하고 있습니다. "회사"는 본 개인정보처리방침을 통하여 이용자가 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드리고자 합니다. 본 개인정보처리방침은 정부의 법률 및 지침 변경이나 "회사"의 내부 방침 변경 등으로 인하여 수시로 변경될 수 있으며, 변경될 경우 변경된 개인정보처리방침을 "회사"가 제공하는 서비스 페이지에 공지하도록 하겠습니다. </p>
+            <p>"회사"의 개인정보처리방침은 다음과 같은 내용을 포함하고 있습니다.</p>
+                <p class="pl-8 py-1">1. 개인정보의 수집 및 이용 목적, 항목 및 수집방법 </p>
+                <p class="pl-8 py-1">2. 개인정보의 제공 및 처리위탁 </p>
+                <p class="pl-8 py-1">3. 개인정보 수집·이용의 거부 시 불이익</p>
+                <p class="pl-8 py-1">4. 개인정보 보유 및 이용기간 </p>
+                <p class="pl-8 py-1">5. 개인정보의 파기절차 및 방법</p>
+                <p class="pl-8 py-1">6. 회원의 권리와 행사 방법 </p>
+                <p class="pl-8 py-1">7. 개인정보 자동 수집 장치의 설치/운영 및 거부에 관한 사항 </p>
+                <p class="pl-8 py-1">8. 개인정보 보호를 위한 기술적/관리적 대책 </p>
+                <p class="pl-8 py-1">9. 개인정보 관리 책임자의 성명, 연락처, 부서 </p>
+                <p class="pl-8 py-1">10. 고지의 의무 </p>
+        </div>
+        <div class="pb-10">
+            <h2 class="text-xl font-extrabold">1. 개인정보 수집의 이용 목적, 항목 및 수집방법</h2>
+                <p class="py-1 pl-8">1. “개인정보”란 생존하는 개인에 관한 정보로서 당해 개인을 식별할 수 있는 정보(당해 정보만으로는 특정 개인을 식별할 수 없더라도 다른 정보와 용이하게 결합하여 식별할 수 있는 것을 포함합니다)를 말합니다. </p>
+                <p class="py-1 pl-8">2. "회사"는 수집된 개인정보를 다음의 목적을 위해 활용합니다.</p>
+                    <p class="py-1 pl-16">a. 회원가입 및 의사소통에 관한 사항: 회원 본인확인, 부정 가입방지, 가입 의사확인, 연령확인, 고충상담 및 처리, 공지사항 안내, 약관 위반 회원에 대한 이용제한 조치, 서비스의 원활한 운영에 지장을 미치는 행위 및 서비스 부정이용 행위 제재, 회원 가입 거절 사유 유무의 확인, 분쟁 조정을 위한 기록보존, 불만처리 등 민원처리 등 </p>
+                    <p class="py-1 pl-16">b. 콘텐츠 및 서비스 제공에 관한 사항: 입사지원 및 채용 공고 제안 등 구직 활동 서비스 제공, 각종 맞춤 서비스 제공, 캐시 결제, 개인 및 법인사업자의 서비스 이용 및 판매대금 정산, 금융거래 시 본인 인증 및 금융서비스 등 </p>
+                    <p class="py-1 pl-16">c. 유료 서비스 요금 및 판매대금 정산 및 환불 </p>
+                    <p class="py-1 pl-16">d. 서비스 개선 및 이용에 관한 통계 조사 등, 신규 서비스 개발, 통계학적 특성에 따른 서비스 제공 및 광고 게재, 서비스의 유효성 확인, 접속빈도 파악, 회원의 서비스 이용에 대한 통계 분석 등 서비스 분석 및 서비스 이용환경 개선</p>
+                    <p class="py-1 pl-16">e. 회원으로부터 이에 대한 별도의 동의를 얻은 경우에 한하여, 이벤트 정보 및 참여기회 제공, 광고성 정보 제공 및 참여기회 제공</p>
+                <p class="py-1 pl-8">3. "회사"는 위에 명시한 목적을 위해 다음과 같은 개인정보를 수집하고 있습니다. </p>
+                    <p class="py-1 pl-16">* 회원가입시
+                        <p class="py-1 pl-24">* 필수: 이메일, 비밀번호, 본인확인값(DI, CI) 
+                    <p class="py-1 pl-16">* 스팀 로그인시
+                        <p class="py-1 pl-24">* 스팀 ID
+                    <p class="py-1 pl-16">* 유료서비스 결제시
+                        <p class="py-1 pl-24">* 필수 : 이름, 이메일, 휴대폰번호, 본인확인값(DI, CI) 및 기타 결제 관련 정보
+                        <p class="py-1 pl-24">* 서비스 이용 과정 중 자동 생성 수집 정보
+                        <p class="py-1 pl-24">* IP Address, MAC 주소, 쿠키, 세션, 방문일시, 서비스 이용기록, 불량(부정) 이용기록, 기기정보(OS, 단말기 모델, 이동통신사 정보, 하드웨어 ID, 서비스 이용에 대한 기본 통계), 어플리케이션 설치 및 사용이력
+                    <p class="py-1 pl-16">수집방법: 홈페이지(회원가입, 게시판 등), 어플리케이션(Chato 소프트웨어, 회원가입)</p>
+                <p class="py-1 pl-8">	4. "회사"는 이용자의 개인정보의 수집할 경우 반드시 이용자의 동의를 얻어 수집하며, 이용자의 기본적 인권을 침해할 우려가 있는 인종, 출신지, 본적지, 사상, 정치적 성향, 범죄기록, 건강상태 등의 정보는 이용자의 동의 또는 법령의 규정에 의한 경우 이외에는 수집하지 않습니다. </p>
+        </div>
+        
+        <div class="pb-10">
+ 
+            <h2 class="text-xl font-extrabold">2. 개인정보의 제공 및 처리위탁</h2>
+            <p class="py-1 pl-8">1. 개인정보의 제공 </p>
+                <p class="py-1 pl-16">a. "회사"는 이용자의 개인정보를 “1. 개인정보의 수집 및 이용 목적, 항목 및 수집 방법"에서 고지한 범위 내에서 사용하며, 원칙적으로 이용자의 개인정보를 제공하지 않습니다. 다만 아래의 경우에는 예외로 합니다. </p>
+                <p class="py-1 pl-24">i. 이용자가 사전에 동의한 경우 </p>
+                <p class="py-1 pl-24">ii. 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우 </p>
+            
+            <p class="py-1 pl-8">2. 개인정보 처리의 위탁</p>
+            <p class="py-1 pl-16">a. "회사"는 원활한 업무 처리를 위해서 아래와 같이 개인정보를 위탁하고 있으며, 관계 법령에 따른 위탁계약 시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다. 회사의 개인정보 위탁처리 기관 및 위탁업무 내용은 아래와 같습니다. 위탁기간은 회원의 탈퇴 시 또는 위탁계약 종료시까지 입니다.</p>
+            <p class="py-1 pl-24">i. 국내 위탁 업체</p>
+            
+            <p class="py-1 pl-24">ii. 국외 위탁업체</p>
+                <p class="py-1 pl-24">1. Amazon Web Servises Inc. (AWS Server)</p>
+                    <p class="py-1 pl-32">* 데이터 저장을 위한 클라우드 서버 이용</p>
+                    <p class="py-1 pl-32">* 서비스 이용 기록 또는 수집된 개인정보</p>
+                <p class="py-1 pl-24">2. OpenAI</p>
+                    <p class="py-1 pl-32">* ChatGPT사용을 위한 사용자 채팅기록 전송</p>
+        </div>
+        <div class="pb-10">
+            <h2 class="text-xl font-extrabold">3. 개인정보 수집·이용의 거부 시 불이익</h2>
+                <p class="py-1 pl-8">회원은 개인정보 수집·이용에 관한 동의를 거부할 경우 회원가입과 서비스 이용에 제한이 있습니다.</p>
+        </div>
+
+        <div class="pb-10">
+            <h2 class="text-xl font-extrabold">4. 개인정보 보유 및 이용기간</h2>
+            <p class="py-1 pl-8">1. "회사"는 회원 가입 시 제공한 정보를 회원 가입시점부터 탈퇴 신청이 접수된 날까지 보관할 수 있습니다. 단, 개인정보 도용 등으로 인한 원치 않는 회원탈퇴 등에 대비하기 위해 회원탈퇴 요청 후 [7]일간 개인정보를 보존하고, 서비스의 부정한 이용으로 인한 분쟁을 방지하기 위한 내부 방침에 따라 서비스의 부정이용기록, 즉 이용약관 및 “회사”의 정책에 위배되는 행위를 한 회원의 개인정보는 1년간 보존합니다. </p>
+            <p class="py-1 pl-8">2. 단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 "회사"는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다 </p>
+                <p class="py-1 pl-16">a. 개별적으로 회원의 동의를 받은 경우에는 약속한 보유기간 </p>
+                <p class="py-1 pl-16">b. 보존근거: 전자상거래 등에서의 소비자보호에 관한 법률, 통신비밀보호법 등 관련법령</p>
+                <p class="py-1 pl-16">c. 보존기간: </p>
+                    <p class="py-1 pl-24">i. 계약 또는 청약철회 등에 관한 기록(전자상거래법): 5년 </p>
+                    <p class="py-1 pl-24">ii. 대금결제 및 재화 등의 서비스 등의 공급에 관한 기록(전자상거래법): 5년 </p>
+                    <p class="py-1 pl-24">iii. 소비자의 불만 또는 분쟁처리에 관한 기록(전자상거래법): 3년(다만, 민사, 형사, 	행정상의 절차가 진행 중에 있는 경우에는 그 절차가 종료될 때까지) </p>
+                    <p class="py-1 pl-24">iv. 표시/광고에 관한 기록(전자상거래법): 6개월</p>
+                    <p class="py-1 pl-24">v. 세법이 규정하는 모든 거래에 관한 장부 및 증빙서류(국세기본법): 5년</p>
+                    <p class="py-1 pl-24">vi. 전자금융 거래에 관한 기록(전자금융거래법): 5년</p>
+                    <p class="py-1 pl-24">iv. 접속에 관한 기록(통신비밀보호법): 3개월 </p>
+        </div>
+	
+
+        <div class="pb-10">
+            <h2 class="text-xl font-extrabold">5. 개인정보의 파기절차 및 방법</h2>
+            <p class="py-1 pl-8">1. 회사는 개인정보 보유 및 이용 기간이 경과하면 다음과 같은 방법으로 지체 없이 파기합니다. </p>
+                <p class="py-1 pl-16">a. 전자적 파일 형태인 경우: 복원이 불가능한 방법으로 영구 삭제</p>
+                <p class="py-1 pl-16">b. 인쇄물, 서면, 그 밖의 기록매체인 경우: 파쇄 또는 소각</p>
+            <p class="py-1 pl-8">2. 회사는 위 기준과 별도로 1년간 서비스를 이용하지 않은 회원의 개인정보는 휴면 계정으로 전환하여 별도로 분리하여 보관하거나 삭제할 수 있습니다. </p>
+        </div>
+        <div class="pb-10">
+            <h2 class="text-xl font-extrabold">6. 회원의 권리와 행사 방법</h2>
+                <p class="py-1 pl-8">1. 회원은 언제든지 다음의 사항에 관하여 개인정보 열람, 수정 및 회원 탈퇴를 요구할 수 있습니다. 다만 회원이 회원가입 및 서비스 제공에 필요한 개인정보 등에 대한 동의를 철회하는 경우 회원탈퇴 및 서비스 해지가 불가피하게 되거나 서비스를 제공받지 못하게 될 수 있습니다.</p>
+                    <p class="py-1 pl-16">a. "회사"가 보유하고 있는 회원의 개인정보 </p>
+                    <p class="py-1 pl-16">b. "회사"가 이용자의 개인정보를 이용하거나 제3자에게 제공한 내역 </p>
+                    <p class="py-1 pl-16">c. "회사"에게 개인정보수집ㆍ이용ㆍ제공 등의 동의를 한 내역 </p>
+                <p class="py-1 pl-8">2. 회원은 "회사" 서비스에서 직접 자신의 정보를 열람, 정정을 할 수 있으며, 별도로 개인정보보호책임자에게 서면, 전화, 이메일 등을 통하여 개인정보의 열람, 정정을 요청할 수 있습니다. </p>
+                <p class="py-1 pl-8">3. 회원은 언제든지 자신의 개인정보처리의 정지를 요구할 수 있습니다. </p>
+                <p class="py-1 pl-8">4. 회원은 언제든지 회원가입 시 개인정보의 수집, 이용, 제공 등에 대해 동의하신 의사표시를 철회(회원탈퇴)할 수 있습니다. </p>
+                <p class="py-1 pl-8">5. 회원이 "회사" 서비스에서 본인 확인 절차를 거친 후 직접 동의철회(회원탈퇴)를 하거나, 별도로 개인정보보호책임자에게 서면, 전화 또는 이메일 등을 통하여 연락하면 지체 없이 이용자의 개인정보를 파기하는 등 필요한 조치를 취합니다. 단, 동의철회(회원탈퇴)가 있더라도 관계법령에 따라 최소한의 정보가 보관됩니다. </p>
+        </div>
+
+        <div class="pb-10">
+            <h2 class="text-xl font-extrabold">7. 개인정보 자동 수집 장치의 설치/운영 및 거부에 관한 사항</h2>
+                <p class="py-1 pl-8">1. "회사"는 회원의 정보를 수시로 저장하고 불러오는 "쿠키"(cookie)와 세션(session)를 사용합니다. "쿠키"는 웹사이트 이용 시 서버가 사용자의 웹브라우저에 보내는 작은 데이터 꾸러미로 회원의 컴퓨터의 하드디스크에 저장됩니다. 세션(session)은 서비스 운영에 이용되는 서버가 회원의 접속시간 동안에 회원의 정보를 서버에 저장하는 것을 의미합니다. "회사"는 다음과 같은 목적을 위해 "쿠키"와 “세션”를 사용합니다. </p>
+                <p class="py-1 pl-8">2. “쿠키”와 “세션”은 이용자가 설정한 환경을 유지하도록 함으로써 편리한 사용을 도우며, 이용자의 방문 기록, 이용 형태, 관심 분야를 알게 해줌으로써 이를 통한 최적화된 맞춤 서비스를 제공하고 서비스 개선의 척도로 활용됩니다.</p>
+                <p class="py-1 pl-8">3. 이용자는 "쿠키" 설치에 대한 선택권을 가지고 있으며 웹브라우저에서 옵션을 설정함으로써 모든 "쿠키"를 허용하거나, "쿠키"가 저장될 때마다 확인을 거치거나, 아니면 모든 "쿠키"의 저장을 거부할 수 있습니다. 다만, 쿠키 설치를 거부할 경우 로그인이 필요한 일부 서비스를 이용하는 것에 어려움이 있을 있습니다. 쿠키 설치 허용 여부를 지정하는 방법은 다음과 같습니다.</p>
+                    <p class="py-1 pl-16">i. Chrome 웹 브라우저 > 우측 상단 메뉴 [설정] > [사이트 설정] > [쿠키] 설정</p>
+                    <p class="py-1 pl-16">ii. Safari 웹 브라우저 > [설정] > [Safari] > [쿠키 차단] > 설정 </p>
+                <p class="py-1 pl-8">4. 이용자는 “세션” 설치에 대한 선택권을 가지고 있지 않으며, 로그인이 필요한 서비스 이용 시 서버에 자동으로 “세션”이 생성됩니다.</p>
+        </div>
+        
+        <div class="pb-10">
+            <h2 class="text-xl font-extrabold">8. 개인정보 보호를 위한 기술적/관리적 대책</h2>
+                <p class="py-1 pl-8">1. 회원의 개인정보는 비밀번호에 의해 철저히 보호되고 있으며 본인이 제공한 이메일주소에 매칭되는 비밀번호는 본인만이 알고 있습니다. 따라서 개인정보의 확인 및 변경도 비밀번호를 알고 있는 본인에 의해서만 가능합니다. </p>
+                <p class="py-1 pl-8">2. 회원은 본인의 비밀번호를 누구에게도 알려주면 안됩니다. 이를 위해 "회사"에서는 기본적으로 PC에서의 사용을 마치신 후 온라인상에서 로그아웃(LOG-OUT)하고 웹 브라우저를 종료하도록 권장합니다. </p>
+                <p class="py-1 pl-8">3. "회사"의 개인정보 보호를 위한 기술적/관리적 대책 및 물리적 조치는 다음과 같습니다. </p>
+                    <p class="py-1 pl-16">a. 수집한 개인정보 중 비밀번호 등 본인임을 인증하는 정보에 대한 암호화 장치 </p>
+                    <p class="py-1 pl-16">b. 컴퓨터 바이러스에 의한 개인정보의 침해를 막기 위한 백신소프트웨어 설치, 갱	신, 점검 조치 </p>
+                    <p class="py-1 pl-16">c. 개인정보 시스템에 대한 접근권한 설정, 관리 및 침입차단 시스템 등을 이용한 접근 통제장치 </p>
+                    <p class="py-1 pl-16">d. 개인정보 취급자에 대한 지정과 권한의 설정 및 교육, 개인정보의 안전한 관리 </p>
+        </div>
+        <div class="pb-10">
+            <h2 class="text-xl font-extrabold">9. 개인정보보호책임자의 성명, 연락처, 부서</h2>
+            <p class="py-1 pl-8">회사의 서비스를 이용하시면서 발생한 모든 개인정보보호 관련 민원, 불만처리 등에 관한 사항을 개인정보 보호책임자 및 고객센터로 문의하실 수 있고, 회사는 이용자의 문의에 신속하고 성실하게 답변하겠습니다. </p>
+            <p class="py-1 pl-8">기타 개인정보침해에 관한 상담이 필요한 경우에는 한국정보보호진흥원, 대검찰청 인터넷범죄수사센터, 경찰청 사이버테러대응센터 등으로 문의하실 수 있습니다. </p>
+                <p class="py-1 pl-16">* 한국정보보호진흥원 (1336) </p>
+                <p class="py-1 pl-16">* 대검찰청 인터넷범죄수사센터 (02-3480-3600) </p>
+                <p class="py-1 pl-16">* 경찰청 사이버테러대응센터 (02-392-0330) </p>
+        </div>
+
+        <div class="pb-10">
+            <h2 class="text-xl font-extrabold">10. 고지의 의무</h2>
+            <p class="py-1 pl-8">회사는 개인정보처리방침이 변경되는 경우에는 “회사”의 사이트 “공지사항”을 통하여 변경 및 시행의 시기, 변경 내용을 공지합니다. 변경된 개인정보처리방침은 게시된 날로부터 7일 후부터 효력이 발생합니다. </p>
+
+        </div>
+ 
+
+
+ 
+
+</div>
+</div>
+</section>
+        <section class="px-8 pt-8 sm:px-24 lg:pt-16 lg:px-36 overflow-hidden bg-black text-gray-400">
+            <div class="container mx-auto px-4 md:flex mb-8">
+                <div class="w-4/12 hidden md:block">
+                    <img src="static/img/logo_black.svg" alt="logo with black-white tone" class="w-36 mx-auto">
+                    <p class="text-gray-400 text-center text-xl pt-2">Chato</p>
+                </div>
+                <div class="m-3">
+                    <a href="https://raondata.ai/" target="_blank" class="uppercase font-extrabold text-lg py-2 my-4 hover:underline">(주) 라온데이터</a>
+                    <p class="text-sm pt-6"><span class="font-extrabold">사업자 등록번호:</span> 661-86-02087  <span class="px-2">|</span> <span class="font-extrabold">대표: </span> 최 성</p>
+                    <p class="text-sm"><span class="font-extrabold">사업장 소재지:</span> 서울특별시 중구 장충단로 209, 5층 라온데이터</p>
+                    <p class="text-sm"><span class="font-extrabold">이메일:</span> contact@raondata.ai</p>
+                    <div class="flex pt-2">
+                        <p class="text-xs pt-5 pr-3"><a href="privacy.html" class="text-xs hover:underline">개인정보처리방침</a></p>
+                        <p class="text-xs pt-5 pr-3"><a href="terms.html" class="text-xs hover:underline">서비스 이용약관</a></p>
+                    </div>
+                </div>
+                <div>
+                </div>          
+            </div>
+            <p class="px-12 lg:px-44 text-gray-400 pb-3 text-xs">
+                &copy; Copyright 2023. All Rights Reserved by RaonData
+            </p>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+    </script>
+    
+</body>
+
+
+</html>

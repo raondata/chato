@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description1 %}{% endblock %}">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chato">
+    <meta property="og:description" content="{% block description2 %}{% endblock %}">
+    <meta property="og:image" content="./static/favicon/apple-icon-120x120.png">
+    <meta property="og:url" content="https://chato.raondata.ai">
+
+    <meta property="instagram:card" content="Your closest AI friend in the desktop">
+    <meta property="instagram:title" content="Chato">
+    <meta property="instagram:description" content="{% block description3 %}{% endblock %}">
+    <meta property="instagram:image" content="./static/favicon/apple-icon-120x120.png">
+    <meta property="instagram:domain" content="Chato">
+    
+    <meta property="youtube:card" content="Your closest AI friend in the desktop">
+    <meta property="youtube:title" content="Chato">
+    <meta property="youtube:description" content="{% block description4 %}{% endblock %}">
+    <meta property="youtube:image" content="./static/favicon/apple-icon-120x120.png">
+    <meta property="youtube:domain" content="Chato">
+    
+    <!-- <link rel="icon" src="./static/img/logo.svg)> -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./static/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./static/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./static/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./static/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./static/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./static/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./static/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./static/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./static/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./static/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./static/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./static/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="google-site-verification" content="O7aNPV84PmrrEKAPMxnto77wuBWawA8Ntus1ixIr-nE" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+  
+        html {
+          font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+      </style>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <meta name="naver-site-verification" content="2ef994cc8bb5cb4e57d7f85f9d192180f8ba2493" />
+
+    <!-- Hotjar Tracking Code for https://www.chato.raondata.ai -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3659699,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+
+
+<body id="page" class="antialiased font-body bg-body text-body scroll-smooth md:scroll-auto" x-data="{ open: false }"  style="background-color: rgb(54, 56, 64);">
+    <div class="" id="content">
+        <section class="overflow-hidden pb-20">
+            <section>
+                <div>
+                    <div class="flex items-center justify-between pt-8 px-8 lg:px-24 xl:px-36 py-5 relative">
+                        <div class="w-auto">
+                            <div class="items-center">
+                                <div class="mr-14">
+                                    <a class="uppercase font-extrabold text-white flex items-center" href="index.html">
+                                        <img src="./static/img/logo.svg" class="w-8 lg:w-12"><p class="px-3 text-2xl lg:text-3xl">Chato</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-auto">
+                            <div class="items-center">
+                                <div class="w-auto flex">
+                                    <a href="https://blog.naver.com/chato-raondata" target="_blank" ><img src="./static/img/naver.svg"  alt= "naver logo"width="60"></a>
+                                    <a href="https://www.instagram.com/chato.raondata/" target="_blank" ><img src="./static/img/instagram.svg" alt= "instagram logo" width="60"></a>
+                                    <a href="https://www.youtube.com/@chato.raondata" target="_blank" ><img src="./static/img/youtube.svg" alt= "youtube logo" width="60"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        
+            <div class="relative container mx-auto px-8 py-24 sm:px-8 lg:py-32 lg:px-12">
+                <div class="justify-center items-center -m-6">
+                    <div class="flex-1">
+                        <div class="max-w-3xl 2xl:max-w-4xl pt-6 2xl:pt-12 mx-auto place-items-center">
+                            <img src="./static/img/logo.svg" alt="chato's logo" class="w-3/12	 mx-auto">
+                            <h1 class="mt-4 text-center text-white font-extrabold text-2xl leading-tight md:text-3xl md:leading-tight lg:text-5xl lg:leading-tight">
+                                CHATO
+                            </h1>
+                            <p class="mb-8 text-md lg:text-xl leading-loose lg:leading-loose text-center text-white">
+                                바탕화면 속 나만의 작은 AI 친구
+                            </p>
+                            <div class="flex items-center justify-between pt-16 2xl:pt-36">
+                                <a href="#"  class="w-4/12 px-3"><img src="./static/img/download_window.svg" alt="mac download button"></a>
+                                <!-- <img src="./static/img/download_window.svg" alt="mac download button" class="w-4/12 px-3"> -->
+                                <img src="./static/img/download_steam1.svg" alt="steam download button" class="w-4/12 px-3">
+                                <img src="./static/img/download_mac.svg" alt="mac download button" class="w-4/12 px-3">
+                            </div>
+                    </div>
+                </div>
+            </div>
+                </section>
+        
+                <section id="howitworks" class="px-9 py-24 sm:px-12 lg:py-32 lg:px-16">
+                    <div class="container mx-auto"  data-aos="fade-up" data-aos-duration="800" data-aos-delay="80">
+                        <p class="mb-5 uppercase text-xs sm:text-sm lg:text-base font-semibold tracking-[.2rem] text-gray-400 text-center">Features</p>
+                        <h2 class="mb-6 text-md font-extrabold leading-tight text-white md:text-xl md:leading-tight lg:text-4xl lg:leading-tight font-bold text-center">화면 속 움직이는 나만의 캐릭터</h2>
+                        <div class="flex flex-wrap -m-4">
+                            <img src="static/img/talk_walk.gif" alt="demo screen" class="w-11/12 lg:w-7/12 px-4 mx-auto pt-4"> 
+                        </div>
+                        <p class="mb-20 max-w-2xl mx-auto text-center text-md lg:text-xl leading-loose lg:leading-loose text-gray-200 pt-4">
+                            나만의 캐릭터를 꾸미고, 모르는 것을 물어볼 수 있어요.
+                        </p>
+                    </div>
+                </section>
+        
+                <section class="relative py-24 lg:py-32">
+                    
+                    <div class="relative z-50 container mx-auto px-4 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        
+                    <p class="mb-5 uppercase text-xs sm:text-sm lg:text-base font-semibold tracking-[.2rem] text-gray-400 text-center">CHAT</p>
+                    <h2 class="mx-auto mb-6 text-xl font-extrabold leading-tight text-white md:text-2xl md:leading-tight lg:text-4xl lg:leading-tight font-bold text-center">
+                        다양한 질문과 답변, 실시간 정보 탐색
+                    </h2>
+                    <p class="max-w-2xl mx-auto text-center text-md lg:text-xl leading-loose lg:leading-loose text-gray-300">
+                        차토에게 무엇이든 물어봐주세요. <span class="block hidden md:inline "><a href="https://www.youtube.com/@chato.raondata" target="_blank"  class="text-blue-200 hover:underline">자세한 활용법은 유튜브</a> 를 참고해주세요.</span>
+                    </p>
+                    <div class="md:flex pt-6 md:pt-0 mx-auto items-center justify-center">
+                        <img src="./static/img/logo.svg" alt="chato logo button" class="mx-auto w-3/12 md:w-3/12 md:max-w-2xl md:pt-14">
+                        <img id="chat_img1" src="./static/img/chat_1.svg" alt="chating example1" class="drop-shadow-md mx-auto max-w-md md:max-w-2xl lg:max-w-3xl pt-4 md:pt-14 md:px-16 rounded-10">
+                        <img id="chat_img2" src="./static/img/chat_2.svg" alt="chating example2" class="drop-shadow-md mx-auto max-w-md md:max-w-2xl lg:max-w-3xl pt-4 md:pt-14 md:px-16 rounded-10" hidden>
+                        <img id="chat_img3" src="./static/img/chat_3.svg" alt="chating example3" class="drop-shadow-md mx-auto max-w-md md:max-w-2xl lg:max-w-3xl pt-4 md:pt-14 md:px-16 rounded-10" hidden>
+                        <img id="chat_img4" src="./static/img/chat_4.svg" alt="chating example4" class="drop-shadow-md mx-auto max-w-md md:max-w-2xl lg:max-w-3xl pt-4 md:pt-14 md:px-16 rounded-10" hidden>
+                        <img id="chat_img5" src="./static/img/chat_5.svg" alt="chating example5" class="drop-shadow-md mx-auto max-w-md md:max-w-2xl lg:max-w-3xl pt-4 md:pt-14 md:px-16 rounded-10" hidden>
+                        <img id="chat_img6" src="./static/img/chat_6.svg" alt="chating example6" class="drop-shadow-md mx-auto max-w-md md:max-w-2xl lg:max-w-3xl pt-4 md:pt-14 md:px-16 rounded-10" hidden>
+                        
+                    </div>
+                    <p class="text-gray-300 fond-light text-sm text-cente pt-4 pb-10 md:pb-4">실제 답변 결과는 차이가 있을 수 있습니다.</p>
+                    </div>
+                </section>
+                <section id="testimonials" class="relative px-9 py-24 sm:px-12 lg:py-32 lg:px-16 mb-24">
+                    <div class="container mx-auto px-4"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <!-- <p class="mb-5 uppercase text-xs sm:text-sm lg:text-base font-semibold tracking-[.2rem] text-gray-400 text-center">CHAT</p> -->
+                        <h2 class="mb-6 text-md font-extrabold leading-tight text-white md:text-xl md:leading-tight lg:text-4xl lg:leading-tight font-bold text-center">
+                            데스크톱 속 나만의 친구를 만들어보세요.
+                        </h2>
+                        <div class="flex flex-wrap">
+                            <div class="w-full mx-auto md:w-1/2 lg:w-2/5 p-5">
+                                <div class="p-0.5 bg-gradient-to-r rounded-lg transform hover:-translate-y-3 rounded-10 transition ease-out duration-1000 text-center">
+                                    <div class="h-full px-7 py-4 rounded-lg" style="background-color: #5E687A;">
+                                        <h2 class="text-2xl font-extrabold text-white">자연스러운 대답</h2>
+                                        <img src="./static/img/fig1.svg" alt="Chato UI" class="drop-shadow-md rounded-10 mx-auto" width="360">
+                                        <p class="text-md lg:text-lg text-gray-200">
+                                            chatGPT의 지능을 가진 캐릭터와
+                                        </p>
+                                        <p class="mb-8 text-md lg:text-lg text-gray-200">
+                                            자유롭게 대화하세요.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full mx-auto  md:w-1/2 lg:w-2/5 p-5">
+                                <div class="p-0.5 bg-gradient-to-r  rounded-lg transform hover:-translate-y-3 rounded-10 transition ease-out duration-1000 text-center">
+                                    <div class="h-full px-7 py-4 rounded-lg"  style="background-color: #5E687A;">
+                                        <h2 class="text-2xl font-extrabold text-white">내가 꾸미는 캐릭터</h2>
+                                        <img src="./static/img/fig2.svg" alt="chato customization" class="drop-shadow-md mx-auto rounded-10" width="360">
+                                        <p class="text-md lg:text-lg text-gray-200">
+                                            내가 좋아하는 캐릭터, 연인 친구를
+                                        </p>
+                                        <p class="mb-8 text-md lg:text-lg text-gray-200">
+                                            바탕화면에 둘 수 있어요.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <script>
+                chat_img1 = document.getElementById("chat_img1");
+                chat_img2 = document.getElementById("chat_img2");
+                chat_img3 = document.getElementById("chat_img3");
+                chat_img4 = document.getElementById("chat_img4");
+                chat_img5 = document.getElementById("chat_img5");
+                chat_img6 = document.getElementById("chat_img6");
+                imgs = [chat_img1, chat_img2, chat_img3, chat_img4, chat_img5, chat_img6]
+                current_hidden = 0
+                setInterval(function() {
+                    imgs[current_hidden].hidden = true;
+                    current_hidden = (current_hidden + 1) % 6;
+                    imgs[current_hidden].hidden = false;
+                }, 2600);
+            </script>
+
+
+        <section class="px-8 pt-8 sm:px-24 lg:pt-16 lg:px-36 overflow-hidden bg-black text-gray-400">
+            <div class="container mx-auto px-4 md:flex mb-8">
+                <div class="w-4/12 hidden md:block">
+                    <img src="./static/img/logo_black.svg" alt="logo with black-white tone" class="w-36 mx-auto">
+                    <p class="text-gray-400 text-center text-xl pt-2">Chato</p>
+                </div>
+                <div class="m-3">
+                    <a href="https://raondata.ai/" target="_blank" class="uppercase font-extrabold text-lg py-2 my-4 hover:underline">(주) 라온데이터</a>
+                    <p class="text-sm pt-6"><span class="font-extrabold">사업자 등록번호:</span> 661-86-02087  <span class="px-2">|</span> <span class="font-extrabold">대표: </span> 최 성</p>
+                    <p class="text-sm"><span class="font-extrabold">사업장 소재지:</span> 서울특별시 중구 장충단로 209, 5층 라온데이터</p>
+                    <p class="text-sm"><span class="font-extrabold">이메일:</span> contact@raondata.ai</p>
+                    <div class="flex pt-2">
+                        <p class="text-xs pt-5 pr-3"><a href="privacy.html" class="text-xs hover:underline">개인정보처리방침</a></p>
+                        <p class="text-xs pt-5 pr-3"><a href="terms.html" class="text-xs hover:underline">서비스 이용약관</a></p>
+                    </div>
+                </div>
+                <div>
+                </div>          
+            </div>
+            <p class="px-12 lg:px-44 text-gray-400 pb-3 text-xs">
+                &copy; Copyright 2023. All Rights Reserved by RaonData
+            </p>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+    </script>
+    
+</body>
+
+
+</html>
